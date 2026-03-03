@@ -1,120 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="utf-8">
-<title>thiscloud9</title>
-<link rel="icon" href="images/knight.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    body {
-        font: 14px Arial,sans-serif; 
-        margin: 0px;
-    }
-    .header {
-        padding: 10px 20px;
-        background: #acb3b9; 
-    }
-    .header h1 {
-        font-size: 24px;
-    }
-    .container {
-        width: 100%;
-        background: #f2f2f2; 
-    }
-    .nav, .section {
-        float: left; 
-        padding: 20px;
-        min-height: 170px;
-        box-sizing: border-box;
-    }
-    .nav {            
-        width: 35%;
-        background: #d4d7dc;
-    }
-    .section {
-        width: 65%;
-    }
-    .nav ul {
-        list-style: none; 
-        line-height: 24px;
-        padding: 0px; 
-    }
-    .nav ul li a {
-        color: #333;
-    }    
-    .clearfix:after {
-        content: ".";
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden;
-    }
-    .footer {
-        background: #acb3b9;            
-        text-align: left;
-        padding: 5px;
-    }
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
 </style>
 </head>
 <body>
-<!-- <body style="background-image: url('images/bubbles.jpg'); background-size: cover;"> -->
-    <div class="container">
-        <div class="header">
-            <h1>Computer Science Remote Learning Support for Bullard High Students 2020-2021</h1>
-        </div>
-        <div class="wrapper clearfix">
-            <div class="nav">
-                <ul>
-                    <h2>Assignment Descriptions</h2>
-                        <p>
-                            Project-Based Assignments are posted on the calendar to the right by their subject.
-                            Note that all assignments are color coded based on the course the students are enrolled.
-                            Clicking on the name of the assignment will open a description for each assignment.<br><br>
-                            <b>
-                            <font color="blue">BLUE: CSE (Computer Software Engineering)</font><br>
-                            <font color="#d4af37">GOLD: AP CSP (Computer Science Principles)</font><br>
-                            <font color="red">ROSE: AP CSA (Computer Science A)</font><br>
-                            </b>
-                        </p>
-                    <h2>Links to Microsoft Teams Class Meetings</h2>
-                        <li><a href="https://teams.microsoft.com/l/channel/19%3a39672231bc7245fdb1d26f8c4b8705b5%40thread.tacv2/General?groupId=de7e27ad-bcff-4c52-adc8-2e404cdb5493&tenantId=74c90083-03c6-453a-801c-9251cdd17eb8" target="_blank"><font color="blue">1st Period PLTW Software Engineering</font></a></li>
-                        <li><a href="https://teams.microsoft.com/l/channel/19%3a30eaecbad19b4a8c8979c9a48db0acd5%40thread.tacv2/General?groupId=1517928e-3ec1-4245-93e4-4230fb23d0c4&tenantId=74c90083-03c6-453a-801c-9251cdd17eb8" target="_blank"><font color="blue">2nd Period PLTW Software Engineering</font></a></li>
-                        <li><a href="https://teams.microsoft.com/l/channel/19%3a7d23db37e6ec4e018c9c36be1bdc7f8c%40thread.tacv2/General?groupId=b170a2ca-5bb5-4f7b-9f53-e3a952f977f5&tenantId=74c90083-03c6-453a-801c-9251cdd17eb8" target="_blank"><font color="#d4af37">4th Period AP Computer Science P</font></a></li>
-                        <li><a href="https://teams.microsoft.com/l/channel/19%3aa4feebd04e4348d1ada3fd45b81dcd31%40thread.tacv2/General?groupId=414eecec-061f-4b52-a995-78c42e2f58fa&tenantId=74c90083-03c6-453a-801c-9251cdd17eb8" target="_blank"><font color="red">5th Period AP Computer Science A</font></a></li>
-                        <li><a href="https://teams.microsoft.com/l/channel/19%3aa8abb9cd195a4b7785ba8acd818cdc3a%40thread.tacv2/General?groupId=e85be7d0-f2c4-4065-ad19-4e586b0169d2&tenantId=74c90083-03c6-453a-801c-9251cdd17eb8" target="_blank"><font color="blue">6th Period PLTW Software Engineering</font></a></li>
-                    <h2>Links to Microsoft Teams Office Hours</h2>
-                    <p> I will be available for office hours on Wednesdays and Fridays from 8:00am-9:00am and daily from 1:15pm-2:15pm.
-                        Just <a href="https://teams.microsoft.com/l/meetup-join/19%3a71ff61c732f34fc8857e85aef22be7bd%40thread.tacv2/1598044556349?context=%7b%22Tid%22%3a%2274c90083-03c6-453a-801c-9251cdd17eb8%22%2c%22Oid%22%3a%22bdc4a9e3-ca97-4104-9e8e-cb708c695cd2%22%7d" target="_blanks">click here</a> to enter the Meeting.  
-                        I can help with our current assignment or anything course-related.
-                    </p>
-                    <h2>Links to Advanced Placement (AP) College Board</h2>
-                    <p> <i>Online Resources:&emsp;</i>
-                        <a href="https://apcentral.collegeboard.org/" target="_blank">AP Central</a>&ensp;
-                        <a href="https://apclassroom.collegeboard.org/" target="_blank">AP Classroom</a>&ensp;
-                        <br>
-                        <i>Emulator Resources:&emsp;</i>
-                        <a href="https://drive.google.com/file/d/1lamI4JJM5Sn-jNbsh_MGRdSZqmdWxd7U/view?usp=sharing">Android</a>
-                    </p>
-                        <!-- <li><a href="DocsCSE\8_Python_Tkinter\L05_GUI_Images.pdf" target="_blank">CSE Software Engineering</a></li>
-                        <li><a href="https://docs.google.com/forms/d/1njXy1L4ysdDAqswT_aA8ctGsmdvoCGNxgesl6eDmY9E" target="_blank">CSE Software Engineering</a></li>
-                        <li><a href="https://docs.google.com/forms/d/1njXy1L4ysdDAqswT_aA8ctGsmdvoCGNxgesl6eDmY9E" target="_blank">CSP (AP) Advanced Placement</a></li>
-                        <li><a href="https://docs.google.com/forms/d/1njXy1L4ysdDAqswT_aA8ctGsmdvoCGNxgesl6eDmY9E" target="_blank">CSA (AP) Advanced Placement</a></li>
-                         -->
-                </ul>
-            </div>
-            <div class="section">
-                <h2>Week at a Glance</h2>
-<!--                 <iframe src="https://outlook.office365.com/owa/calendar/36e1813a77eb487088698003a9571548@fresnounified.org/8298916ff0904ff095d7d17a9320722717127932723197473058/calendar.html" style="border:solid 1px #777" width="640" height="600" frameborder="0" scrolling="no">
-                </iframe> -->
-                
-                <!--
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=MjZycmhyN2pzanVjYjFkcnExZm5rMHBoMGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=dnA3NWljcTdqM25vM3Zkb2ppZmoxcXVzanNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Y2xhc3Nyb29tMTEwNTQ5MTAyMDI1OTAzMDc0Nzk1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=Mm1tdThvdGhzM3Q0Y2MzN3Rzc28xbXJqb2tAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23DD5511&amp;color=%23B08B59&amp;color=%23005c63&amp;color=%236633CC&amp;color=%231F753C&amp;title=Assignments" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no">
-                -->
-                <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=cm1zbXZ1dGFoNmQ5dWJjbTNpYm9icWg2MTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YjNqbGMxNmFrb21va2o5bzU5dWFkcTdyNGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=Y2xhc3Nyb29tMTEwNTQ5MTAyMDI1OTAzMDc0Nzk1QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=amtjcDNsY3Znb24zY3M3cXJwNnIxdmI1dW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;color=%23E4C441&amp;color=%239E69AF&amp;color=%23D50000&amp;color=%230B8043&amp;title=2020-2021%20Bullard%20Computer%20Science%20Remote%20Learning" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-        <div class="footer">
-            <p>thiscloud9 &copy; Bob Hanna 2026</p>
-        </div>
-    </div>
+
+<h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
 </body>
-</html>
+</html> 
